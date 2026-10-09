@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@nich87/discord-rpc": "^1.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "postject": "^1.0.0-alpha.6"
+  },
+  "scripts": {
+    "build:exe": "node scripts/build-exe.js"
+  }
+}

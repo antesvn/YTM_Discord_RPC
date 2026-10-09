@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "YTM Discord RPC",
+  "version": "0.3.0",
+  "description": "Detecta informações da música atual no YouTube Music e envia para um programa local.",
+  "permissions": [],
+  "host_permissions": [
+    "http://127.0.0.1:38473/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://music.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1Kd3cZ9FERI1DZR2Ap/HxeieZEpYxtlszmAkluIyjdgkhhcT7mP6CHa3GcXgMbedx/IcmHPdKqnH8T4JdSqljWE1MGwAEsEaUmp2iv2fT0g7zy13mzHbSdaFEQ8gOJRChQOMREnjpvWgEHaBAZ3iCSQWodecT0zW8UlNse6yqr3OfGh4n9qEmnofB9q7y3ccNWnnWfYKeqBRaY1L2vhpbrAOXAFACHZFDhtYwEcuUUoGJH8kwvX7e+NRt6GUuWIT4fCsyfYvqq+dGAXg8JsTy8mBrQEsiwZM3SbH+qNkD1z/CLbQWVx+0sor8QlH03kCnV/Q5k1RgXvEkLJQ0Za61QIDAQAB"
+}
