@@ -1,0 +1,14 @@
+# Local logs and extension packages
+server.log
+*.pem
+*.crx
+*.zip
+*.rar
+
+# Dependencies and obsolete build caches
+server/node_modules/
+server/.pkg-cache/
+
+# Recreated by the executable build; retain the distributable executable
+server/dist/*
+!server/dist/YTM_Discord_RPC_silent_v6.exe
